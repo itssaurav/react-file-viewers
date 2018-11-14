@@ -1,23 +1,47 @@
 {
-  "name": "react-file-viewer",
-  "version": "0.5.0",
-  "description": "Extendable file viewer for web",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/plangrid/react-file-viewer.git"
+  "_from": "react-file-viewer@^0.4.0",
+  "_id": "react-file-viewer@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-OzFgyY68QO8LD5cCT6iwKdPFch6WvEB2jYZ9TF5QVn51jcL/80n+ozkxGLH8zLxs+oFZOqYOGpfx5xn+WqNmnw==",
+  "_location": "/react-file-viewer",
+  "_phantomChildren": {
+    "big.js": "3.2.0",
+    "co": "4.6.0",
+    "create-react-class": "15.6.3",
+    "emojis-list": "2.1.0",
+    "fast-json-stable-stringify": "2.0.0",
+    "fbjs": "0.8.17",
+    "json5": "0.5.1",
+    "loose-envify": "1.4.0",
+    "node-ensure": "0.0.0",
+    "object-assign": "4.1.1",
+    "prop-types": "15.6.2"
   },
-  "scripts": {
-    "dev": "webpack -d --watch",
-    "build": "webpack -p --progress",
-    "start": "node ./scripts/start.js",
-    "lint": "node_modules/.bin/eslint ./src/**/*.jsx",
-    "test": "node_modules/.bin/jest --env=jsdom --watch",
-    "jest": "node_modules/.bin/jest --env=jsdom",
-    "tag-and-publish": "node ./scripts/publish.js"
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-file-viewer@^0.4.0",
+    "name": "react-file-viewer",
+    "escapedName": "react-file-viewer",
+    "rawSpec": "^0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.4.0"
   },
-  "author": "PlanGrid <opensource@plangrid.com>",
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-file-viewer/-/react-file-viewer-0.4.2.tgz",
+  "_shasum": "7514dfb9b0c30d68cbc5ca17952ed71a6a738885",
+  "_spec": "react-file-viewer@^0.4.0",
+  "_where": "/Users/user/Desktop/kredx-fe/web",
+  "author": {
+    "name": "PlanGrid",
+    "email": "opensource@plangrid.com"
+  },
+  "bugs": {
+    "url": "https://github.com/plangrid/react-file-viewer/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Alexei Schiopu",
@@ -33,11 +57,20 @@
       "email": "viktoriya.savkina@gmail.com"
     }
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/plangrid/react-file-viewer/issues"
+  "dependencies": {
+    "comma-separated-values": "^3.6.4",
+    "mammoth": "1.3.6",
+    "pdfjs-dist": "1.8.357",
+    "prop-types": "^15.5.10",
+    "react": "^16.4.1",
+    "react-data-grid": "^2.0.42",
+    "react-dom": "^16.4.1",
+    "react-visibility-sensor": "3.6.2",
+    "three": "0.85.2",
+    "xlsx": "^0.10.1"
   },
-  "homepage": "https://github.com/plangrid/react-file-viewer#readme",
+  "deprecated": false,
+  "description": "Extendable file viewer for web",
   "devDependencies": {
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
@@ -74,18 +107,18 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
-    "comma-separated-values": "^3.6.4",
-    "prop-types": "^15.5.10",
-    "react": "^16.4.1",
-    "react-data-grid": "^2.0.42",
-    "react-dom": "^16.4.1",
-    "react-visibility-sensor": "3.6.2",
-    "mammoth": "1.3.6",
-    "three": "0.85.2",
-    "xlsx": "^0.10.1",
-    "pdfjs-dist": "1.8.357"
+  "eslintConfig": {
+    "extends": "airbnb",
+    "plugins": [
+      "import"
+    ],
+    "settings": {
+      "import/resolver": {
+        "webpack": "webpack.config.js"
+      }
+    }
   },
+  "homepage": "https://github.com/plangrid/react-file-viewer#readme",
   "jest": {
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](build|node_modules|scripts|example_files)[/\\\\]"
@@ -104,15 +137,22 @@
       "node_modules"
     ]
   },
-  "eslintConfig": {
-    "extends": "airbnb",
-    "plugins": [
-      "import"
-    ],
-    "settings": {
-      "import/resolver": {
-        "webpack": "webpack.config.js"
-      }
-    }
-  }
+  "license": "MIT",
+  "main": "src/components/file-viewer.jsx",
+  "module": "dist/index.js",
+  "name": "react-file-viewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plangrid/react-file-viewer.git"
+  },
+  "scripts": {
+    "build": "webpack -p --progress",
+    "dev": "webpack -d --watch",
+    "jest": "jest --env=jsdom",
+    "lint": "eslint ./src/**/*.jsx",
+    "start": "node ./scripts/start.js",
+    "tag-and-publish": "node ./scripts/publish.js",
+    "test": "jest --env=jsdom --watch"
+  },
+  "version": "0.4.2"
 }
